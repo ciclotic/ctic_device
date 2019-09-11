@@ -2,11 +2,13 @@
 namespace CTIC\Device\Device\Domain;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 use CTIC\App\Base\Domain\IdentifiableTrait;
 use CTIC\Device\Device\Domain\Validation\DeviceValidation;
 use CTIC\App\Company\Domain\Company;
 
 /**
+ * @ApiResource
  * @ORM\Entity(repositoryClass="CTIC\Device\Device\Infrastructure\Repository\DeviceRepository")
  */
 class Device implements DeviceInterface
